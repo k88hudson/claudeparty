@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "jsx": "preserve",
+    "lib": ["ES2022", "dom"],
+    "baseUrl": ".",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@render/*": ["src/render/*"],
+      "@main/*": ["src/main/*"],
+      "@common/*": ["src/common/*"]
+    },
+    "resolveJsonModule": true,
+    "types": ["vite/client", "./src/preload"],
+    "strict": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+}

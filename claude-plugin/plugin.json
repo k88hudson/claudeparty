@@ -1,0 +1,5 @@
+{
+  "name": "claudeparty",
+  "description": "Reports Claude Code session state to the Claudeparty desktop app",
+  "version": "0.3.1"
+}

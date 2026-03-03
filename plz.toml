@@ -1,0 +1,34 @@
+[extends]
+env = "pnpm"
+
+[tasks.dev]
+run = "electron-forge start"
+description = "Start dev server"
+
+[tasks.lint]
+run = "prettier --check ."
+description = "Prettier check"
+
+[tasks.fix]
+run = "prettier --write ."
+description = "Prettier autofix"
+
+[tasks.test]
+run_parallel = ["vitest run --config vitest.main.config.ts", "vitest run --config vitest.render.config.ts"]
+description = "Run all tests"
+
+[tasks.test-main]
+run = "vitest run --config vitest.main.config.ts"
+description = "Run main process tests"
+
+[tasks.test-render]
+run = "vitest run --config vitest.render.config.ts"
+description = "Run renderer tests"
+
+[tasks.package]
+run = "electron-forge package"
+description = "Package the app"
+
+[tasks.make]
+run = "electron-forge make"
+description = "Build distributable"
