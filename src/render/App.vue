@@ -60,7 +60,10 @@ onUnmounted(() => {
   <div class="container">
     <div v-if="instances.length === 0" class="empty">
       <img
-        :src="'data:image/svg+xml,' + encodeURIComponent(getSvg(emptyCharacter, 'idle', 0))"
+        :src="
+          'data:image/svg+xml,' +
+          encodeURIComponent(getSvg(emptyCharacter, 'idle', 0))
+        "
         class="empty-cat"
         alt="sleeping cat"
       />
