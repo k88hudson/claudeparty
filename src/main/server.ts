@@ -34,7 +34,7 @@ export function startServer(
   notifyRenderer: () => void,
   onWaitingForInput?: () => void,
 ) {
-  const port = Number(process.env.CLAUDEPARTY_PORT) || 4689;
+  const port = Number(process.env.CATPARTY_PORT) || 4689;
 
   const server = createServer(async (req, res) => {
     const url = new URL(req.url ?? "/", `http://localhost:${port}`);
@@ -105,7 +105,7 @@ export function startServer(
   });
 
   server.listen(port, "127.0.0.1", () => {
-    console.log(`claudeparty server listening on http://127.0.0.1:${port}`);
+    console.log(`catparty server listening on http://127.0.0.1:${port}`);
   });
 
   return server;

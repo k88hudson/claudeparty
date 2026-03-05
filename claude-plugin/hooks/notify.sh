@@ -29,7 +29,7 @@ for _ in 1 2 3 4 5 6 7 8; do
 done
 TERM_PROG="${TERM_PROGRAM:-}"
 
-PORT="${CLAUDEPARTY_PORT:-4689}"
+PORT="${CATPARTY_PORT:-4689}"
 URL="http://localhost:${PORT}/api/session"
 
 if [ "$STATE" = "__delete__" ]; then

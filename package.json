@@ -1,14 +1,15 @@
 {
-  "name": "claudeparty",
+  "name": "catparty",
   "version": "0.1.0",
   "packageManager": "pnpm@10.30.3",
-  "description": "Menubar app for tracking Claude instances",
+  "description": "Menubar app for tracking Claude instances as cats",
   "main": ".vite/build/index.js",
   "scripts": {
     "dev": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "sync-cats": "tsx scripts/sync-cat-svgs.ts",
+    "lint": "prettier --check 'src/**/*.{ts,vue,css}'",
     "lint:fix": "prettier --write 'src/**/*.{ts,vue,css}'",
     "test": "npm run test:main && npm run test:render",
     "test:render": "vitest run -r src/render --passWithNoTests",
